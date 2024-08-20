@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://o8lxfhc5gabh"]
+
+[ext_resource type="Script" path="res://farming/farm_patch.gd" id="1_8xhtr"]
+[ext_resource type="PackedScene" uid="uid://cxihf1dbbb4qx" path="res://farming/farm_land.tscn" id="1_ev1m7"]
+
+[node name="FarmPatch" type="GridContainer"]
+columns = 3
+script = ExtResource("1_8xhtr")
+
+[node name="FarmLand" parent="." instance=ExtResource("1_ev1m7")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="FarmLand2" parent="." instance=ExtResource("1_ev1m7")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="FarmLand3" parent="." instance=ExtResource("1_ev1m7")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="FarmLand4" parent="." instance=ExtResource("1_ev1m7")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="FarmLand5" parent="." instance=ExtResource("1_ev1m7")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="FarmLand6" parent="." instance=ExtResource("1_ev1m7")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2

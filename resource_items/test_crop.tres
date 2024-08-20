@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="CropData" load_steps=5 format=3 uid="uid://nkuow10s4aje"]
+
+[ext_resource type="Texture2D" uid="uid://5ih4jdp3swr3" path="res://art/Sprout Lands - Sprites - Basic pack/Objects/Basic_Plants.png" id="1_ludt2"]
+[ext_resource type="Script" path="res://resource_items/crop_data.gd" id="2_u7isf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oit14"]
+resource_local_to_scene = true
+atlas = ExtResource("1_ludt2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x73w7"]
+resource_local_to_scene = true
+atlas = ExtResource("1_ludt2")
+region = Rect2(0, 0, 16, 16)
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("2_u7isf")
+name = "crop"
+description = "A crop! Try planting it."
+genes = "GXXGXX"
+icon_texture = SubResource("AtlasTexture_x73w7")
+crop_texture = SubResource("AtlasTexture_oit14")
+crop_animation_frames = Array[int]([1, 5])
+growth_timer = 1.0

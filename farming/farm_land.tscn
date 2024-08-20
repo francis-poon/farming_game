@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=3 uid="uid://cxihf1dbbb4qx"]
+
+[ext_resource type="Texture2D" uid="uid://b17ti3r80mp80" path="res://art/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt_Wide.png" id="1_7hhyn"]
+[ext_resource type="Script" path="res://farming/farm_land.gd" id="1_dhlqw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0dweo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dmck0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cqfc0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4uhqc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpe07"]
+atlas = ExtResource("1_7hhyn")
+region = Rect2(48, 48, 16, 16)
+
+[node name="FarmLand" type="Button" groups=["farmland"]]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1092.0
+offset_bottom = -588.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0dweo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dmck0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_cqfc0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4uhqc")
+action_mode = 0
+button_mask = 3
+icon = SubResource("AtlasTexture_jpe07")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("1_dhlqw")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
